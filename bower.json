@@ -1,0 +1,15 @@
+{
+  "name": "adapt-narrative",
+  "version": "2.0.3",
+  "framework": ">=2",
+  "homepage": "https://github.com/cgkineo/adapt-narrative",
+  "displayName" : "Narrative",
+  "component" : "narrative",
+  "description": "A narrative",
+  "main": "/js/adapt-narrative.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

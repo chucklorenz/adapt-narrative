@@ -1,0 +1,33 @@
+{
+    "_id":"c-05",
+    "_parentId":"b-05",
+    "_type":"component",
+    "_component":"narrative",
+    "_classes":"",
+    "_layout":"left",
+    "title":"Our first look at a component",
+    "displayTitle":"Our first look at a component",
+    "body":"This component you're reading is a narrative component.",
+    "instruction":"",
+    "_currentIndex": 0,
+    "counterText": " {{{inc _currentIndex}}} / {{{_items.length}}} ",
+    "backText": "",
+    "_backIconClass": "",
+    "nextText": "",
+    "_nextIconClass": "",
+    "_loop": true,
+    "_items": [
+        {
+            "_graphic": {
+                "_src": "course/en/images/single_width.jpg"
+            },
+            "body": "This is some display text"
+        },
+        {
+            "_graphic": {
+                "_src": "course/en/images/single_width.jpg"
+            },
+            "body": "This is some display text"
+        }
+    ]
+}

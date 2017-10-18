@@ -1,0 +1,54 @@
+.narrative-component {
+
+    .items-container {
+        position: relative;
+    }
+
+    .items {
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+
+    .items-inner {
+        transition: transform 0.4s ease-out;
+    }
+
+    .narrative-item {
+        display: inline-block;
+
+        img {
+            pointer-events: none;
+            width: 100%;
+        }
+    }
+
+    .texts {
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+
+    .texts-inner {
+        transition: transform 0.4s ease-out;
+    }
+
+    .narrative-text {
+        display: inline-block;
+        font-size: @body-text-font-size;
+        line-height: @body-line-height;
+    }
+
+    .controls {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+    }
+
+    .counter {
+        display: inline-block;
+        color: white;
+    }
+
+}
