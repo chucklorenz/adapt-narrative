@@ -9,8 +9,8 @@ define([
             return _.extend({}, _.result(ComponentModel.prototype, "defaults"), {
                 _currentIndex: 0,
                 _loop: true,
-                _nextIconClass: "icon-controls-right",
-                _backIconClass: "icon-controls-left",
+                _nextIconClass: "",
+                _backIconClass: "",
                 counterText: " {{{inc _currentIndex}}} / {{{_items.length}}} "
             });
         },

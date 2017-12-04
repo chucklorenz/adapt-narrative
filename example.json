@@ -21,12 +21,16 @@
             "_graphic": {
                 "_src": "course/en/images/single_width.jpg"
             },
+            "title": "Title",
+            "subtitle": "SubTitle",
             "body": "This is some display text"
         },
         {
             "_graphic": {
                 "_src": "course/en/images/single_width.jpg"
             },
+            "title": "Title",
+            "subtitle": "SubTitle",
             "body": "This is some display text"
         }
     ]

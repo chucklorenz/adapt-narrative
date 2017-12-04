@@ -1,3 +1,5 @@
 <div class="narrative-text" style="width: calc(100% / {{@root/_items.length}});">
-    {{body}}
+    {{#if title}}<div class="narrative-title">{{{title}}}</div>{{/if}}
+    {{#if subtitle}}<div class="narrative-subtitle">{{{subtitle}}}</div>{{/if}}
+    {{#if body}}<div class="narrative-body">{{{body}}}</div>{{/if}}
 </div>
