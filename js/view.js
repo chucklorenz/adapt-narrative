@@ -79,6 +79,8 @@ define([
         },
 
         moveIndex: function(indexes, isSwipe) {
+
+            var offsetDirection = Adapt.config.get('_defaultDirection') === 'rtl' ? '100' : '-100';
             var currentIndex = this.model.get("_currentIndex") || 0;
             var items = this.model.get("_items").length;
             currentIndex+=indexes;
@@ -94,6 +96,7 @@ define([
             }
 
             this.model.set("_currentIndex", currentIndex);
+            this.model.set("_offsetDirection", offsetDirection);
             this.model.checkItemsComplete();
             this.reRender();
         },

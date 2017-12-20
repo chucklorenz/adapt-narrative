@@ -3,7 +3,7 @@
     <div class="component-widget">
         <div class="items-container">
             <div class="items">
-                <div class="items-inner" style="transform: translateX({{math (math "-100" "/" _items.length) "*" _currentIndex}}%); width: calc(100% * {{_items.length}}); ">
+                <div class="items-inner" style="transform: translateX({{math (math _offsetDirection "/" _items.length) "*" _currentIndex}}%); width: calc(100% * {{_items.length}}); ">
                     {{#each _items}}
                         {{> narrativeItem this index=@index}}
                     {{/each}}
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="texts">
-            <div class="texts-inner" style="transform: translateX({{math (math "-100" "/" _items.length) "*" _currentIndex}}%); width: calc(100% * {{_items.length}}); ">
+            <div class="texts-inner" style="transform: translateX({{math (math _offsetDirection "/" _items.length) "*" _currentIndex}}%); width: calc(100% * {{_items.length}}); ">
                 {{#each _items}}
                     {{> narrativeText this index=@index}}
                 {{/each}}
