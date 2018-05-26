@@ -15,6 +15,9 @@ define([
 
         postRender: function() {
             this.setReadyStatus();
+            if (this.model.get('_hasEqualHtTextBoxes')) {
+                this.setBodyHeight();
+            }
 
             _.bindAll(this, "onSwipe");
             this.$(".items-container").on({
@@ -101,6 +104,16 @@ define([
             this.reRender();
         },
 
+        setBodyHeight: function() {
+            var elementHeights = this.$('.narrative-text-inner').map(function() {
+                return $(this).outerHeight(true);
+            }).get();
+            
+            var maxHeight = Math.max.apply(null, elementHeights);
+
+            this.$('.narrative-text-inner').css({minHeight: maxHeight});
+        },
+
         remove: function() {
             this.$(".items-container").off({
                 "swipeleft": this.onSwipe,
@@ -115,3 +128,4 @@ define([
 
     return Narrative;
 });
+
