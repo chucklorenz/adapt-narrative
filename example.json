@@ -5,33 +5,41 @@
     "_component":"narrative",
     "_classes":"",
     "_layout":"left",
-    "title":"Our first look at a component",
-    "displayTitle":"Our first look at a component",
-    "body":"This component you're reading is a narrative component.",
-    "instruction":"",
+    "title":"Narrative Component",
+    "displayTitle":"Narrative Component",
+    "body":"The Narrative component lets you scroll through a series of images each with some accompanying text.<br><br>This component may be used in both single- and full-width layouts.",
+    "instruction":"Select the arrows to find out more.",
     "_currentIndex": 0,
     "counterText": " {{{inc _currentIndex}}} / {{{_items.length}}} ",
     "backText": "",
-    "_backIconClass": "",
+    "_backIconClass": "icon-controls-small-left",
     "nextText": "",
-    "_nextIconClass": "",
+    "_nextIconClass": "icon-controls-small-right",
     "_loop": true,
     "_items": [
         {
             "_graphic": {
                 "_src": "course/en/images/single_width.jpg"
             },
-            "title": "Title",
+            "title": "Item 1 Title",
             "subtitle": "SubTitle",
-            "body": "This is some display text"
+            "body": "Narratives are particularly good for showing dialogue between two or more characters, with each step of the conversation being accompanied by an image. This photo story approach can be used to provide context for the learning to follow, to illustrate real-world application of the learning or to show the impact on people when the learning hasn’t been applied correctly."
         },
         {
             "_graphic": {
                 "_src": "course/en/images/single_width.jpg"
             },
-            "title": "Title",
+            "title": "Item 2 Title",
             "subtitle": "SubTitle",
-            "body": "This is some display text"
+            "body": "Narratives can also be used to present case studies, where the different displays are used to set the scene, show the key events and then the outcome."
+        },
+        {
+            "_graphic": {
+                "_src": "course/en/images/single_width.jpg"
+            },
+            "title": "Item 3 Title",
+            "subtitle": "SubTitle",
+            "body": "The narrative can also be used when you want to illustrate the constituent steps that make up a larger process."
         }
     ]
 }
