@@ -37,18 +37,71 @@
         display: inline-block;
         font-size: @body-text-font-size;
         line-height: @body-line-height;
+        vertical-align: top;
+    }
+
+    .narrative-text-inner {
+        padding-top: @item-padding-top;
+        //uncomment the following when using a transparent component background
+        //padding: @item-padding;
+        //background-color: @component-background-color;
+    }
+
+    .narrative-text-title { //to be moved to adapt-contrib-vanilla/less/src/narrative.less
+        .item-title;
+        margin-bottom: @title-text-margin;
+    }
+
+    button .icon {
+        color: @item-text-color;
     }
 
     .controls {
         position: absolute;
         right: 0;
         bottom: 0;
-        background-color: black;
+        background-color: @item-color;
+    }
+
+    .back, .next {
+        padding: @item-padding;
     }
 
     .counter {
         display: inline-block;
-        color: white;
+        padding: @item-padding;
+        color: @item-text-color;
+        vertical-align: baseline;
     }
 
+    // Styles for desktop, layout: full
+    @media all and (min-width: (@device-width-small + 1)) {
+
+        &.component-full {
+
+            .component-widget {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .items-container {
+                flex-basis: auto;
+                width: 60%;
+                .dir-rtl & {
+                    margin-right: inherit;
+                }
+            }
+
+            .texts {
+                flex-basis: auto;
+                width: 36%;
+            }
+
+            .narrative-text-inner {
+                padding-top: 0;
+            }
+        }
+    }
 }
